@@ -1,5 +1,5 @@
 {
-    "body": "{\"movieId\":\"1\", \"rating\":\"5\"}",
+    "body": "{\"movieId\":1, \"rating\":5}",
     "requestContext": {
       "identity": {
         "cognitoIdentityId": "USER-SUB-1234"

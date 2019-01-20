@@ -25,7 +25,7 @@ provider:
   #
   #environment: ${file(env.yml):${self:provider.stage}}
 
-  iamRoleStatments:
+  iamRoleStatements:
     - Effect: Allow
       Action:
         - dynamodb:DescribeTable
@@ -35,7 +35,7 @@ provider:
         - dynamodb:PutItem
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
-      Resource: "arn:aws:dyanmodb:us-east-1:*.*"
+      Resource: "arn:aws:dynamodb:us-east-1:*:*"
 
 functions:
   # Defines an HTTP API endpoint that calls the main function 

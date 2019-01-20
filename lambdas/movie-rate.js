@@ -1,6 +1,5 @@
-import AWS from 'aws-sdk';
 import * as dynamoDbLib from "../libs/dynamodb-lib";
-import { success, failure } from '../libs/response-libs';
+import { success, failure } from '../libs/response-lib';
 
 export async function handler(event, context) {
   const data = JSON.parse(event.body);
@@ -27,7 +26,8 @@ export async function handler(event, context) {
     await dynamoDbLib.call('put', params);
     return success(params.Item);
   } catch (e) {
+    console.log(e)
     return failure({status: false});
   }
-  
+
 }

@@ -4,7 +4,8 @@
   "description": "A Node.js starter for the Serverless Framework with async/await and unit test support",
   "main": "handler.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-rate-local": "sls invoke local --function rate --path mocks/movie-rate-event.json"
   },
   "author": "",
   "license": "MIT",

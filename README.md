@@ -1,4 +1,6 @@
-### Moive PIN API
+### MoviePin API
+
+Backend API to support the MoviePin application
 
 #### Stack
 - Serverless

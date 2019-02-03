@@ -53,3 +53,12 @@ functions:
           method: post
           cors: true
           authorizer: aws_iam
+  user-movie-list-get:
+    description: Get user movie list 
+    handler: lambdas/user-movie-list-get.handler
+    events:
+      - http:
+          path: user-movie-list
+          method: get
+          cors: true
+          authorizer: aws_iam

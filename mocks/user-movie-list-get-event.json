@@ -1,5 +1,7 @@
 {
-  "body": "{\"movieId\":1, \"rating\":5}",
+  "queryStringParameters": {
+    "param1": "value1"
+  },
   "requestContext": {
     "identity": {
       "cognitoIdentityId": "USER-SUB-1234"

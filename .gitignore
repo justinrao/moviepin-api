@@ -50,3 +50,9 @@ env.yml
 
 # Jetbrains IDEs
 .idea
+
+# my Scripts
+scripts/*
+
+# VS Code history
+.history/*
